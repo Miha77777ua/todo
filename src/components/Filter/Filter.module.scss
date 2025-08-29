@@ -1,0 +1,13 @@
+.form__filter {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 24px;
+  color: inherit;
+  width: 100%;
+
+  &::placeholder {
+    color: inherit;
+  }
+}

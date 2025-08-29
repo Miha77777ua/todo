@@ -1,0 +1,40 @@
+@import "../../sass/abstracts/variables.scss";
+
+.todo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 95%;
+  font-size: 20px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 4px solid $accent;
+    border-radius: 20px;
+    align-items: center;
+    transition: .5s;
+    gap: 50px;
+
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+
+  &__remove { 
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}

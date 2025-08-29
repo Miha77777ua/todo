@@ -1,0 +1,31 @@
+@import "../../sass/abstracts/placeholders.scss";
+@import "../../sass/abstracts/variables.scss";
+
+.form {
+  @extend %wrap__item;
+  gap: 10px;
+
+  &__input {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    color: inherit;
+    background-color: transparent;
+    font-size: 24px;
+    width: 60%;
+
+    &::placeholder {
+      color: inherit;
+    }
+  }
+
+  &__submit {
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: 24px;
+    border: 4px solid $accent;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+}

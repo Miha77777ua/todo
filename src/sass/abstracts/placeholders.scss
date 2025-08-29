@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+%wrap__item {
+  box-sizing: border-box;
+  flex-basis: calc((100% - 30px) / 2);
+  padding: 10px;
+  border-radius: 20px;
+  background-color: $bgc-accent;
+  border: 7px solid $accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

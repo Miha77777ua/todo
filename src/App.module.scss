@@ -1,0 +1,37 @@
+@import "./sass/abstracts/variables.scss";
+@import "./sass/abstracts/placeholders.scss";
+
+.title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 1500px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-height: 600px;
+  overflow-y: auto;
+  z-index: -1;
+}
+
+.todo__wrap {
+  @extend %wrap__item;
+}
+
+.info__block {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 6px solid $accent;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 300px;
+}
